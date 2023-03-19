@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #5f6458;
+    color: #fff;
+}
+.u-name {
+    font-size: 20px;
+    padding-left: 17px;
+}
+
+.u-name b {
+    color: #f8f8f8;
+}
+.header ion-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header ion-icon:hover {
+    color: #127b8e;
+}
+
+.user-p {
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+
+.user-p img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-p h4 {
+    color: #ccc;
+    padding: 5px 0;
+}
+
+.side-bar {
+    position: fixed;
+    width: 250px;
+    background: #5f6458;
+    min-height: 100vh;
+    transition: 500ms width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.body {
+    display: flex;
+}
+.section-1 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-1 h1 {
+    color: #000000;
+    font-size: 60px;
+}
+.section-1 p {
+    color: #127b8e;
+    font-size: 20px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 5px;
+}
+.side-bar ul {
+   margin-top: 20px;
+   list-style: none;
+}
+.side-bar ul li {
+    font-size: 16px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    transition: 500ms background;
+}
+.side-bar ul li:hover {
+    background: #127b8e;
+}
+.side-bar ul li a {
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.side-bar ul li a ion-icon {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 23px;
+}
+#navbtn {
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 25px;
+    transition: 500ms color;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+    width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p {  
+    visibility: hidden;
+} /* Main white dashboard page enlarges to take up whole page */
+#checkbox:checked ~ .body .side-bar a span {   /* addditionally calling a and span element */
+    display: none;
+}
+
+/* Dropdown Button ( top right profile dropdown)  */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  table {
+    table-layout: fixed;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    column-width: 80px;
+  }
+ /* Recent order */
+  main .recent-orders{
+    margin-top: 2rem;
+  }
+
+  main .rescent-orders h2 {
+    margin-bottom: 0.8rem;
+
+  }
+
+  main .rescent-orders table {
+    background: white;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
